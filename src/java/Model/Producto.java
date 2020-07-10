@@ -1,6 +1,8 @@
 
 package Model;
 
+import java.sql.Date;
+
 /**
  *
  * @author Cristian
@@ -8,27 +10,40 @@ package Model;
 public class Producto {
     private int id_producto;
     private String nom_producto;
-    private float stock;
-    private float precio;
-    private String unidad_de_medida;
-    private int estado_producto;
-    private int id_categoria;
-    private Categoria categoria; //Objeto categoria
-    
-    public Producto(){
+    private String categoria_id;
+    private double stock;
+    private double precio;
+    private String unidadMedida;
+    private int estado;
+    private String des_producto;
+    private Date fecha_entrada;
+
+    private Categoria categoria;//objeto categoria para la llave foranea
+
+    public Producto() {
         this.id_producto = 0;
-        this.categoria = new Categoria(); //Inicializar el metodo categoria
+        this.nom_producto = "";
+        this.categoria_id = "";
+        this.stock = 0;
+        this.precio =0;
+        this.unidadMedida="";
+        this.estado = 1;
+        this.des_producto = "";
+        
+        //this.categoria = new Categoria();
     }
-    
-    public Producto(int id_producto, String nom_producto, float stock, float precio, String unidad_de_medida, int estado_producto, int id_categoria, Categoria categoria) {
+
+    public Producto(int id_producto, String nom_producto, String categoria_id, double stock, double precio, String unidadMedida, int estado, String des_producto, Date fecha_entrada, Categoria categoria) {
         this.id_producto = id_producto;
         this.nom_producto = nom_producto;
+        this.categoria_id = categoria_id;
         this.stock = stock;
         this.precio = precio;
-        this.unidad_de_medida = unidad_de_medida;
-        this.estado_producto = estado_producto;
-        this.id_categoria = id_categoria;
-        this.categoria = categoria;
+        this.unidadMedida = unidadMedida;
+        this.estado = estado;
+        this.des_producto = des_producto;
+        this.fecha_entrada = fecha_entrada;
+        //this.categoria = categoria;
     }
 
     public int getId_producto() {
@@ -47,46 +62,63 @@ public class Producto {
         this.nom_producto = nom_producto;
     }
 
-    public float getStock() {
+    public String getCategoria_id() {
+        return categoria_id;
+    }
+
+    public void setCategoria_id(String categoria_id) {
+        this.categoria_id = categoria_id;
+    }
+
+    public double getStock() {
         return stock;
     }
 
-    public void setStock(float stock) {
+    public void setStock(double stock) {
         this.stock = stock;
     }
 
-    public float getPrecio() {
+    public double getPrecio() {
         return precio;
     }
 
-    public void setPrecio(float precio) {
+    public void setPrecio(double precio) {
         this.precio = precio;
     }
 
-    public String getUnidad_de_medida() {
-        return unidad_de_medida;
+    public String getUnidadMedida() {
+        return unidadMedida;
     }
 
-    public void setUnidad_de_medida(String unidad_de_medida) {
-        this.unidad_de_medida = unidad_de_medida;
+    public void setUnidadMedida(String unidadMedida) {
+        this.unidadMedida = unidadMedida;
     }
 
-    public int getEstado_producto() {
-        return estado_producto;
+    public int getEstado() {
+        return estado;
     }
 
-    public void setEstado_producto(int estado_producto) {
-        this.estado_producto = estado_producto;
+    public void setEstado(int estado) {
+        this.estado = estado;
+    }
+    
+    
+    public String getDes_producto() {
+        return des_producto;
     }
 
-    public int getId_categoria() {
-        return id_categoria;
+    public void setDes_producto(String des_producto) {
+        this.des_producto = des_producto;
     }
 
-    public void setId_categoria(int id_categoria) {
-        this.id_categoria = id_categoria;
+    public Date getFecha_entrada() {
+        return fecha_entrada;
     }
 
+    public void setFecha_entrada(Date fecha_entrada) {
+        this.fecha_entrada = fecha_entrada;
+    }
+    
     public Categoria getCategoria() {
         return categoria;
     }

@@ -1,16 +1,15 @@
 
 package DAO;
 
-/**
- *
- * @author Cristian
- */
 import Model.Categoria;
 import java.util.List;
 
+/**
+ *
+ * @author Cristian 
+ */
 public interface CategoriaDAO {
-    //Definir los metodos como la clase interface los metodos no se implementaran aqui
-    //Los metodos son de tipo abstracto
+    //aqui definimos los metodos abstractos
     public List<Categoria> Listar();
     public List<Categoria> Listar2();
     public Categoria editarCat(int id_cat_edit);
