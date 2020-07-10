@@ -8,12 +8,12 @@ import Factory.MySQLConexionFactory;
  */
 public class FactoryConexionBD {
     //podemos definir la conexion para diferentes BD
-    public static final int MySql = 1;
+    public static final int MySQL = 1;
     public static String[] configMySql = {"bd_inventario", "root", ""};
     
     public static ConexionBD open(int tipoBD){
         switch(tipoBD){
-            case FactoryConexionBD.MySql:
+            case FactoryConexionBD.MySQL:
                 return new MySQLConexionFactory(configMySql);
                
             default:

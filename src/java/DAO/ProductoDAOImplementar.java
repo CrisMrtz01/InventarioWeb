@@ -19,7 +19,7 @@ public class ProductoDAOImplementar implements ProductoDAO{
     
     @Override
     public List<Producto> Listar() {
-        this.conn = FactoryConexionBD.open(FactoryConexionBD.MySql);
+        this.conn = FactoryConexionBD.open(FactoryConexionBD.MySQL);
         
         StringBuilder miSql = new StringBuilder();
         miSql.append("SELECT\n" +
@@ -58,7 +58,7 @@ public class ProductoDAOImplementar implements ProductoDAO{
 
     @Override
     public Producto editaProd(int id_prod_edit) {
-        this.conn = FactoryConexionBD.open(FactoryConexionBD.MySql);
+        this.conn = FactoryConexionBD.open(FactoryConexionBD.MySQL);
         Producto producto = new Producto();
         StringBuilder miSql = new StringBuilder();
         miSql.append("SELECT\n" +
@@ -94,7 +94,7 @@ public class ProductoDAOImplementar implements ProductoDAO{
 
     @Override
     public boolean guardarProd(Producto producto) {
-        this.conn = FactoryConexionBD.open(FactoryConexionBD.MySql);
+        this.conn = FactoryConexionBD.open(FactoryConexionBD.MySQL);
         boolean guardar = false;
         try {
             if (producto.getId_producto() == 0) {
@@ -134,7 +134,7 @@ public class ProductoDAOImplementar implements ProductoDAO{
 
     @Override
     public boolean borrarProd(int id_prod_borrar) {
-        this.conn = FactoryConexionBD.open(FactoryConexionBD.MySql);
+        this.conn = FactoryConexionBD.open(FactoryConexionBD.MySQL);
         boolean borrar = false;
         try {
             StringBuilder miSql = new StringBuilder();

@@ -25,7 +25,7 @@ public class UsuarioDAOImplementar implements UsuarioDAO{
 
     @Override
     public List<Usuario> Listar() {
-        this.conn = FactoryConexionBD.open(FactoryConexionBD.MySql);
+        this.conn = FactoryConexionBD.open(FactoryConexionBD.MySQL);
         StringBuilder misql = new StringBuilder();
         misql.append("select * from tb_usuario");
         List<Usuario> lista = new ArrayList<Usuario>();
@@ -61,7 +61,7 @@ public class UsuarioDAOImplementar implements UsuarioDAO{
 
     @Override
     public Usuario editarUsu(int id_usu_edit) {
-        this.conn = FactoryConexionBD.open(FactoryConexionBD.MySql);
+        this.conn = FactoryConexionBD.open(FactoryConexionBD.MySQL);
         Usuario usuario = new Usuario();
         StringBuilder miSql = new StringBuilder();
         
@@ -91,7 +91,7 @@ public class UsuarioDAOImplementar implements UsuarioDAO{
 
     @Override
     public boolean guardarUsu(Usuario usuario) {
-        this.conn = FactoryConexionBD.open(FactoryConexionBD.MySql);
+        this.conn = FactoryConexionBD.open(FactoryConexionBD.MySQL);
         boolean guardar = false;
         try {
             if (usuario.getId() == 0) {
@@ -134,7 +134,7 @@ public class UsuarioDAOImplementar implements UsuarioDAO{
 
     @Override
     public boolean borrarUsu(int id_usu_borrar) {
-        this.conn = FactoryConexionBD.open(FactoryConexionBD.MySql);
+        this.conn = FactoryConexionBD.open(FactoryConexionBD.MySQL);
         boolean borrar = false;
         try {
             StringBuilder miSql = new StringBuilder();

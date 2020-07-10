@@ -1,0 +1,12 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div>
+    <div class="encabezado">
+        Sistema de Control de Inventario
+        <a href="index" class="btn btn-primary btn-sm" role="button">Inicio</a>
+        <a href="categorias?opcion=listar" class="btn btn-primary btn-sm" role="button">Categorias</a>
+        <a href="usuarios?opcion=listar" class="btn btn-primary btn-sm" role="button">Usuarios</a>
+        <a href="productos?opcion=listar" class="btn btn-primary btn-sm" role="button">Productos</a>
+    </div>
+    <div class="contenido"><!--This Div will be closed in the footer-->
+
