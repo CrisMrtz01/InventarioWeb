@@ -8,7 +8,7 @@ import java.sql.DriverManager;
  *
  * @author Cristian
  */
-public final class MySQLConexionFactory extends ConexionBD{
+public final class MySqlConexionFactory extends ConexionBD{
 
     public MySQLConexionFactory(String[] criterios) {
         this.parametros = criterios;
