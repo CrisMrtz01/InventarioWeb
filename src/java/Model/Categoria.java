@@ -46,7 +46,6 @@ public class Categoria {
         this.estado_categoria = estado_categoria;
     }
     
-   
-
+    
 }
 

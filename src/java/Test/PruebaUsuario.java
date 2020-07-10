@@ -5,6 +5,7 @@ import DAO.UsuarioDAO;
 import DAO.UsuarioDAOImplementar;
 import Model.Usuario;
 import java.util.List;
+
 /**
  *
  * @author Cristian
@@ -61,15 +62,15 @@ public class PruebaUsuario {
         UsuarioDAO usuario = new UsuarioDAOImplementar();
         Usuario guarda_user = new Usuario();
         guarda_user.setId(2);
-        guarda_user.setNombre("Pedro Paramo");
-        guarda_user.setApellido("Agirre Longaniza");
-        guarda_user.setCorreo("eljefe@gmail.com");
+        guarda_user.setNombre("Raul Auron");
+        guarda_user.setApellido("Manzano Play");
+        guarda_user.setCorreo("auron@gmail.com");
         guarda_user.setUsuario("Usuario");
-        guarda_user.setClave("9455");
+        guarda_user.setClave("9876");
         guarda_user.setTipo(1);
         guarda_user.setEstado(1);
-        guarda_user.setPregunta("Que color no te gusta");
-        guarda_user.setRepuesta("Azul");
+        guarda_user.setPregunta("Cual es el color que no gusta");
+        guarda_user.setRepuesta("El amarillo");
         
         usuario.guardarUsu(guarda_user);
     }

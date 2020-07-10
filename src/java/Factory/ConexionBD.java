@@ -14,7 +14,7 @@ public abstract class ConexionBD {
     protected String[] parametros;//arreglo que recibe los parametros de la conexion
     protected Connection conexion;
     
-    //Metodo Abstracto
+    //Metodo abstracto
     abstract Connection open();
     
     //Metodo para las consultas
@@ -31,7 +31,7 @@ public abstract class ConexionBD {
         return rs;
     }
     
-    //Metodo que ejecuta el SQL
+    //Metodo para ejecutar Sql
     public boolean ejecutarSql(String consulta){
         Statement st;
         boolean guardar = true;
@@ -45,7 +45,7 @@ public abstract class ConexionBD {
         return guardar;
     }
     
-    //Cierra la conexion
+    //Metodo para cerrar conexion
     public boolean cerrarConexion(){
         boolean ok = true;
         try {
@@ -57,3 +57,4 @@ public abstract class ConexionBD {
         return ok;
     }
 }
+

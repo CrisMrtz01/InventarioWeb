@@ -1,5 +1,7 @@
-
-
+/**
+ *
+ * @author Cristian
+ */
 package Controller;
 
 import DAO.UsuarioDAO;
@@ -18,8 +20,8 @@ import javax.servlet.http.HttpSession;
 
 
 public class Usuarios extends HttpServlet {
-
-    protected void listarUsuario(HttpServletRequest request, HttpServletResponse response)
+    
+ protected void listarUsuario(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException{
         response.setContentType("text/html;charset=UTF-8");
         //objeto usuario

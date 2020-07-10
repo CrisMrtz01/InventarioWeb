@@ -8,6 +8,7 @@ import DAO.ProductoDAOImplementar;
 import Model.Categoria;
 import Model.Producto;
 import java.util.List;
+
 /**
  *
  * @author Cristian
@@ -71,13 +72,13 @@ public class PruebaProducto {
         ProductoDAO producto = new ProductoDAOImplementar();
         Producto guardar_Prod = new Producto();
         //guardar_Prod.setId_producto(4);
-        guardar_Prod.setNom_producto("leche");
-        guardar_Prod.setPrecio(3.4);
-        guardar_Prod.setPrecio(5.50);
-        guardar_Prod.setUnidadMedida("lt");
+        guardar_Prod.setNom_producto("Zapato");
+        guardar_Prod.setPrecio(2.4);
+        guardar_Prod.setPrecio(6.50);
+        guardar_Prod.setUnidadMedida("cm");
         guardar_Prod.setEstado(1);
         guardar_Prod.setCategoria_id(Integer.toString(10));
-        guardar_Prod.setDes_producto("leche fff");
+        guardar_Prod.setDes_producto("zapato fff");
         
         producto.guardarProd(guardar_Prod);
     }
@@ -87,3 +88,4 @@ public class PruebaProducto {
         producto.borrarProd(4);
     }
 }
+

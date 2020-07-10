@@ -1,4 +1,5 @@
-
+// @author Cristian
+ 
 package Controller;
 
 import DAO.ProductoDAO;
@@ -13,9 +14,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-public class Productos extends HttpServlet {
 
-    protected void listarProductos(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+public class Productos extends HttpServlet {
+    
+   protected void listarProductos(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         response.setContentType("text/html;charset=UTF-8");
         ProductoDAO producto = new ProductoDAOImplementar();
         HttpSession session = request.getSession(true);

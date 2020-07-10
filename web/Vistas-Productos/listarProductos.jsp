@@ -59,7 +59,8 @@
                     }
                 %>
             </table>
-        </div>     
+        </div>
+        
         <%@include file="../WEB-INF/Vistas-Parciales/pie.jspf"%>
     </body>
 </html>

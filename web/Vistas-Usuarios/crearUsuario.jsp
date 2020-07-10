@@ -141,11 +141,15 @@
                         }
                     %>
                     <input type="button" class="btn btn-danger btn-sm" onclick="regresar('<%= request.getContextPath() %>/usuarios?opcion=listar')" name="btnRegresar" value="Regresar">
-     
+               
+                
                 </div>
-            </div>         
+            </div>
+            
         </form>
-        </div>      
+        </div>
+        
         <%@include file="../WEB-INF/Vistas-Parciales/pie.jspf" %>
     </body>
 </html>
+

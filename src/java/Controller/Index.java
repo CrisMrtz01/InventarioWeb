@@ -10,11 +10,11 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author Cristian 
+ * @author Cristian
  */
-public class Index extends HttpServlet {
-
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+public class Index  extends HttpServlet {
+    
+  protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
@@ -46,10 +46,14 @@ public class Index extends HttpServlet {
         processRequest(request, response);
     }
 
+    /**
+     * Returns a short description of the servlet.
+     *
+     * @return a String containing servlet description
+     */
     @Override
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
 
 }
-

@@ -5,7 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!--Importar los datos de la clase categoria-->
+<!--importar los datos de la clase categoria-->
 <!DOCTYPE html>
 <jsp:useBean id="categoria" scope="session"  class="Model.Categoria" />
 <%
@@ -28,7 +28,7 @@
         <title>Control de Inventario</title>
         <%@include file="../WEB-INF/Vistas-Parciales/css-js.jspf" %>
         <script type="text/javascript">
-            function regresar(url){ 
+            function regresar(url){//funcion para el boton regresar
                 location.href = url;
             }
         </script>
@@ -81,3 +81,4 @@
         
     </body>
 </html>
+

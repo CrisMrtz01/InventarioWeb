@@ -8,8 +8,9 @@ import java.util.List;
  *
  * @author Cristian
  */
+
 public interface UsuarioDAO {
-    //metodos abstractos
+  //metodos abstractos
     public List<Usuario> Listar();
     public List<Usuario> Listar2();
     public Usuario editarUsu(int id_usu_edit);

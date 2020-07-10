@@ -58,7 +58,7 @@
     <body>
         <%@include file="../WEB-INF/Vistas-Parciales/encabezado.jspf" %>
         
-        <% //Cuerpo  %>
+        <% //cuerpo  %>
         
         <div class="container">
         <h3>Registros de Productos</h3>
@@ -159,8 +159,9 @@
         </div>
         
         
-        <% //Fin cuerpo  %>
+        <% //fin cuerpo  %>
         
         <%@include file="../WEB-INF/Vistas-Parciales/pie.jspf" %>
     </body>
 </html>
+

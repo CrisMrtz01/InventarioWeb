@@ -1,9 +1,9 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
-<!--Estilos personalizado-->
+<!--estilo personalizado-->
 <link href="bootstrap337/css/styele.css" rel="stylesheet" type="text/css"/>
 
-<!--Estilos de bootstrap-->
+<!--estilos de bootstrap-->
 <link href="bootstrap337/css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
 <link href="bootstrap337/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
 <link href="bootstrap337/css/bootstrap.css" rel="stylesheet" type="text/css"/>

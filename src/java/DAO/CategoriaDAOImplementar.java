@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class CategoriaDAOImplementar implements CategoriaDAO{
     
-    //metod constructor para la conexion
+    //metodo constructor para la conexion
     ConexionBD conn;//cre el objeto de tipo conexion
     public CategoriaDAOImplementar(){
         //definimos la base de datos a conectar por defecto
@@ -23,7 +23,7 @@ public class CategoriaDAOImplementar implements CategoriaDAO{
 
     @Override
     public List<Categoria> Listar() {
-        this.conn = FactoryConexionBD.open(FactoryConexionBD.MySQL);
+        this.conn = FactoryConexionBD.open(FactoryConexionBD.MySql);
         StringBuilder miSql = new StringBuilder();//construir la consulta
         miSql.append("Select * from tb_categoria;");//agrega la consulta
         List<Categoria> lista = new ArrayList<Categoria>();
@@ -54,7 +54,7 @@ public class CategoriaDAOImplementar implements CategoriaDAO{
 
     @Override
     public Categoria editarCat(int id_cat_edit) {
-        this.conn = FactoryConexionBD.open(FactoryConexionBD.MySQL);
+        this.conn = FactoryConexionBD.open(FactoryConexionBD.MySql);
         Categoria categoria = new Categoria();//objeto para devolver los datos
         StringBuilder miSql = new StringBuilder();//construye la consulta
         //agrega la consulta
@@ -77,7 +77,7 @@ public class CategoriaDAOImplementar implements CategoriaDAO{
 
     @Override
     public boolean guardarCat(Categoria categoria) {
-        this.conn = FactoryConexionBD.open(FactoryConexionBD.MySQL);
+        this.conn = FactoryConexionBD.open(FactoryConexionBD.MySql);
         boolean guardar = false;//bandera de resultado
         try {
             if (categoria.getId_categoria() == 0) {//valida para una nueva categoria
@@ -107,7 +107,7 @@ public class CategoriaDAOImplementar implements CategoriaDAO{
 
     @Override
     public boolean borrarCat(int id_cat_borrar) {
-        this.conn = FactoryConexionBD.open(FactoryConexionBD.MySQL);
+        this.conn = FactoryConexionBD.open(FactoryConexionBD.MySql);
         boolean borrar = false;
         try {
             StringBuilder miSql = new StringBuilder();

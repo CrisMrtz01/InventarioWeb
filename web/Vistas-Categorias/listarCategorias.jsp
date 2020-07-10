@@ -3,22 +3,23 @@
     Created on : 07-09-2020, 06:46:26 PM
     Author     : Cristian
 --%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%@page import="Model.Categoria" %>
 
-
+<!--el id debe ser el mismo que se le coloco al nombre de la session-->
 <jsp:useBean id="lista" scope="session" class="java.util.List"/>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Control de inventario</title>
-
+        <!--incluimos las vistas parciales de las url de librerias-->
         <%@include file="../WEB-INF/Vistas-Parciales/css-js.jspf" %>
     </head>
     <body>
         
-        <!--Encabezado-->
+        <!--vista parcial del encabezado-->
         <%@include file="../WEB-INF/Vistas-Parciales/encabezado.jspf"%>
         
         <div class="container">
@@ -35,7 +36,7 @@
                 <%
                     for(int i = 0; i < lista.size(); i++){
                         Categoria categoria = new Categoria();
-                        categoria = (Categoria)lista.get(i);//
+                        categoria = (Categoria)lista.get(i);//se realiza el castong (Categoria)
                     
                 %>
                 <tr>
@@ -54,7 +55,7 @@
             </table>
         </div>
         
-        <!--Pie de pagina-->
+        <!--vista parcial del pie de pagina-->
         <%@include file="../WEB-INF/Vistas-Parciales/pie.jspf"%>
     </body>
 </html>

@@ -1,8 +1,8 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
-    <!--Div Close-->
+    <!--cierre del primer div-->
     </div>
     <div class="pie">
-        &COPY; Cristian Martinez
+        &COPY; Cristian Martínez
     </div>
 </div>

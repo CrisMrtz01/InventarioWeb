@@ -5,6 +5,7 @@ import DAO.CategoriaDAO;
 import DAO.CategoriaDAOImplementar;
 import Model.Categoria;
 import java.util.List;
+
 /**
  *
  * @author Cristian
@@ -28,15 +29,15 @@ public class Prueba {
     public void guardar(){
         CategoriaDAO categoria = new CategoriaDAOImplementar();
         Categoria guarda_cat = new Categoria();
-        guarda_cat.setNom_categoria("Bebidas Naturales"); //Nueva categoria a guardar
-        guarda_cat.setId_categoria(5); //Modifica categoria anterio registrada con el id 5
-        guarda_cat.setEstado_categoria(1); //Estado
+        guarda_cat.setNom_categoria("Bebidas Naturales");//nueva categoria a guardar
+        guarda_cat.setId_categoria(5);//modifica categoria anterio registrada con el id 5
+        guarda_cat.setEstado_categoria(1);//estado
         categoria.guardarCat(guarda_cat);
     }
     
     public void editarCategoria(){
         CategoriaDAO categoria = new CategoriaDAOImplementar();
-        Categoria cat_edit = categoria.editarCat(1); //Se pasa el valor id_categoria = 1
+        Categoria cat_edit = categoria.editarCat(1);//se pasa el valor id_categoria = 1
         System.out.println("CATEGORIA A EDITAR");
         System.out.println("ID: " + cat_edit.getId_categoria() + 
                            " Nombre: " + cat_edit.getNom_categoria() +
